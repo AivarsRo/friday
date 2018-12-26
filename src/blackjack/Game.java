@@ -21,6 +21,7 @@ public class Game {
     }
 
     public void play() {
+        aGameUserInterface.welcome();
         do {
             dealInitialCards();
             boolean allPlayersStay;

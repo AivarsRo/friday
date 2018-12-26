@@ -19,7 +19,10 @@ public class ConsoleUserInterface implements GameUserInterface {
 
     @Override
     public Collection<Player> getPlayers() {
-        return Collections.singletonList(new HumanPlayer(aScanner.next(), this));
+        System.out.print("Enter player name: ");
+        String name = aScanner.next();
+        System.out.println();
+        return Collections.singletonList(new HumanPlayer(name, this));
     }
 
     @Override

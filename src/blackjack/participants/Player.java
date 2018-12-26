@@ -10,6 +10,7 @@ public abstract class Player {
     protected Hand   aHand;
 
     public Player(String name) {
+        aHand = new Hand();
         aName = name;
     }
 
