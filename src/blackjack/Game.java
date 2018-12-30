@@ -12,8 +12,10 @@ import java.util.List;
 
 public class Game {
     private final List<Player>      aPlayers = new ArrayList<>();
-    private       Deck              aDeck    = new Deck();
     private final GameUserInterface aGameUserInterface;
+    
+    private Deck aDeck = new Deck();
+
 
     public Game(GameUserInterface gameUserInterface) {
         aGameUserInterface = gameUserInterface;
