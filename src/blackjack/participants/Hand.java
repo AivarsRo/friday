@@ -4,11 +4,10 @@ import blackjack.cards.Card;
 import blackjack.cards.Rank;
 
 import java.util.HashSet;
-import java.util.Queue;
 import java.util.Set;
 
 public class Hand {
-    private Set<Card> aCards = new HashSet<>();
+    private final Set<Card> aCards = new HashSet<>();
 
     public void addCard(Card card) {
         aCards.add(card);

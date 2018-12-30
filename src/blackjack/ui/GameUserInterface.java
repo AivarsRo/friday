@@ -1,4 +1,4 @@
-package blackjack;
+package blackjack.ui;
 
 import blackjack.participants.Player;
 import blackjack.participants.TurnAction;
@@ -13,8 +13,6 @@ public interface GameUserInterface extends Supplier<TurnAction> {
     Collection<Player> getPlayers();
 
     void showHand(Player player);
-
-    void displayTotal(Player player);
 
     void showWinner(Player player);
 

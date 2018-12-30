@@ -17,9 +17,9 @@ public enum Rank {
     TWO(2, "2");
 
     private final int    value;
-    private       String aDisplayText;
+    private final String aDisplayText;
 
-    private Rank(final int value, String displayText) {
+    Rank(final int value, String displayText) {
         this.value = value;
         aDisplayText = displayText;
     }

@@ -1,4 +1,4 @@
-package blackjack;
+package blackjack.ui;
 
 import blackjack.cards.Card;
 import blackjack.participants.HumanPlayer;
@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class ConsoleUserInterface implements GameUserInterface {
-    private Scanner aScanner = new Scanner(System.in);
+    private final Scanner aScanner = new Scanner(System.in);
 
     @Override
     public void welcome() {
@@ -28,11 +28,6 @@ public class ConsoleUserInterface implements GameUserInterface {
     public void showHand(Player player) {
         Collection<Card> cards = player.getCards();
         System.out.println(player.getName() + " has " + cards + ".");
-    }
-
-    @Override
-    public void displayTotal(Player player) {
-        System.out.println(player.getName() + "'s total is " + player.getScore() + ".");
     }
 
     @Override

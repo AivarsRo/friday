@@ -5,14 +5,15 @@ import blackjack.cards.DeckIsEmptyException;
 import blackjack.participants.Dealer;
 import blackjack.participants.Player;
 import blackjack.participants.TurnAction;
+import blackjack.ui.GameUserInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    private List<Player>      aPlayers = new ArrayList<>();
-    private Deck              aDeck    = new Deck();
-    private GameUserInterface aGameUserInterface;
+    private final List<Player>      aPlayers = new ArrayList<>();
+    private       Deck              aDeck    = new Deck();
+    private final GameUserInterface aGameUserInterface;
 
     public Game(GameUserInterface gameUserInterface) {
         aGameUserInterface = gameUserInterface;

@@ -3,8 +3,8 @@ package blackjack.cards;
 import java.util.Objects;
 
 public class Card {
-    private Suite aSuite;
-    private Rank  aRank;
+    private final Suite aSuite;
+    private final Rank  aRank;
 
     public Card(Suite suite, Rank rank) {
         aSuite = suite;

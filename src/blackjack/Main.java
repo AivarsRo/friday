@@ -1,5 +1,6 @@
-import blackjack.ConsoleUserInterface;
-import blackjack.Game;
+package blackjack;
+
+import blackjack.ui.ConsoleUserInterface;
 
 public class Main {
     public static void main(String[] args) {

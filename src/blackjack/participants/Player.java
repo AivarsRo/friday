@@ -6,8 +6,8 @@ import java.util.Collection;
 
 public abstract class Player {
 
-    protected String aName;
-    protected Hand   aHand;
+    protected final String aName;
+    protected final Hand   aHand;
 
     public Player(String name) {
         aHand = new Hand();

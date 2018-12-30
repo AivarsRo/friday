@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class Deck {
-    private LinkedList<Card> aCards = new LinkedList<>();
+    private final LinkedList<Card> aCards = new LinkedList<>();
 
     public Deck() {
         for (Suite suite : Suite.values()) {

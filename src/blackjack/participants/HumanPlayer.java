@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 public class HumanPlayer extends Player {
 
-    private Supplier<TurnAction> aTurnActionSupplier;
+    private final Supplier<TurnAction> aTurnActionSupplier;
 
     public HumanPlayer(final String name, Supplier<TurnAction> turnActionSupplier) {
         super(name);
