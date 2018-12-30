@@ -21,7 +21,6 @@ public class ConsoleUserInterface implements GameUserInterface {
     public Collection<Player> getPlayers() {
         System.out.print("Enter player name: ");
         String name = aScanner.next();
-        System.out.println();
         return Collections.singletonList(new HumanPlayer(name, this));
     }
 
@@ -29,7 +28,6 @@ public class ConsoleUserInterface implements GameUserInterface {
     public void showHand(Player player) {
         Collection<Card> cards = player.getCards();
         System.out.println(player.getName() + " has " + cards + ".");
-        System.out.println("That makes a total of " + player.getScore() + ".\n");
     }
 
     @Override
@@ -39,7 +37,7 @@ public class ConsoleUserInterface implements GameUserInterface {
 
     @Override
     public void showWinner(Player player) {
-        System.out.println(player.getName() + " is the winner!\n");
+        System.out.println(player.getName() + " is the winner with score : " + player.getScore());
     }
 
     @Override
@@ -59,8 +57,8 @@ public class ConsoleUserInterface implements GameUserInterface {
 
     @Override
     public TurnAction get() {
-        System.out.print("Do you want to 'hit' or 'stay'? ");
         do {
+            System.out.print("Do you want to 'hit' or 'stay'? ");
             switch (aScanner.next()
                             .toUpperCase()) {
                 case "HIT":
@@ -72,7 +70,7 @@ public class ConsoleUserInterface implements GameUserInterface {
                     return TurnAction.STAY;
 
                 default:
-                    System.err.println("Incorrect ");
+                    System.err.println("Incorrect input!");
                     break;
             }
         } while (true);
