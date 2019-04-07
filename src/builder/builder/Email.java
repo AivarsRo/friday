@@ -10,7 +10,7 @@ public class Email {
     private final String      message;
 
     public static EmailBuilder build() {
-        return new EmailBuilder();
+        return new SimpleEmailBuilder();
     }
 
     public Email(String title, Set<String> to, Set<String> cc, Set<String> bcc, String message) {
