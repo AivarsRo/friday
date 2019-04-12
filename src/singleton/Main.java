@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Start");
         singleTest();
-        System.out.println("end");
+        System.out.println("End");
     }
 
     public static void singleTest() {
